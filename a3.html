@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌍 Our Environment & Earth Science - Class 4 Worksheet 3</title>
+    <title>🚦 Signs Around Us - Class 1 Science Worksheet</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
@@ -14,23 +14,24 @@
 
         body {
             font-family: 'Nunito', sans-serif;
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 25%, #fecfef 50%, #a8edea 75%, #fed6e3 100%);
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 25%, #a8edea 50%, #fed6e3 75%, #d299c2 100%);
             min-height: 100vh;
             padding: 20px 10px;
             overflow-x: hidden;
         }
 
-        /* Floating stars animation */
-        .star-float {
+        /* Floating shapes */
+        .float-shape {
             position: fixed;
-            opacity: 0.25;
+            opacity: 0.2;
             pointer-events: none;
-            animation: starFloat 18s infinite ease-in-out;
+            animation: shapeFloat 22s infinite ease-in-out;
         }
-        @keyframes starFloat {
+        @keyframes shapeFloat {
             0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
-            33% { transform: translateY(-35px) rotate(120deg) scale(1.2); }
-            66% { transform: translateY(-15px) rotate(240deg) scale(0.9); }
+            25% { transform: translateY(-30px) rotate(90deg) scale(1.1); }
+            50% { transform: translateY(-15px) rotate(180deg) scale(0.95); }
+            75% { transform: translateY(-40px) rotate(270deg) scale(1.05); }
         }
 
         .container {
@@ -44,7 +45,7 @@
         .header {
             text-align: center;
             padding: 35px 25px;
-            background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+            background: linear-gradient(135deg, #ff6b6b 0%, #feca57 50%, #48dbfb 100%);
             border-radius: 25px;
             margin-bottom: 25px;
             box-shadow: 0 10px 40px rgba(255, 107, 107, 0.3);
@@ -63,13 +64,13 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
-            background-size: 30px 30px;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px);
+            background-size: 25px 25px;
             animation: moveBackground 20s linear infinite;
         }
         @keyframes moveBackground {
             0% { transform: translate(0, 0); }
-            100% { transform: translate(30px, 30px); }
+            100% { transform: translate(25px, 25px); }
         }
         .header h1 {
             font-family: 'Fredoka One', cursive;
@@ -90,7 +91,7 @@
         .header .emoji-float {
             font-size: 2rem;
             display: inline-block;
-            animation: wobble 2.5s infinite;
+            animation: wobble 2s infinite;
             margin: 0 5px;
         }
         @keyframes wobble {
@@ -524,23 +525,23 @@
 </head>
 <body>
 
-    <!-- Floating Stars -->
-    <div class="star-float" style="font-size:20px;left:8%;top:15%;animation-delay:0s;">⭐</div>
-    <div class="star-float" style="font-size:15px;left:85%;top:35%;animation-delay:2s;">✨</div>
-    <div class="star-float" style="font-size:25px;left:50%;top:65%;animation-delay:4s;">🌟</div>
-    <div class="star-float" style="font-size:18px;left:25%;top:50%;animation-delay:1s;">⭐</div>
-    <div class="star-float" style="font-size:22px;left:70%;top:80%;animation-delay:3s;">✨</div>
-    <div class="star-float" style="font-size:16px;left:40%;top:25%;animation-delay:5s;">🌟</div>
+    <!-- Floating Shapes -->
+    <div class="float-shape" style="font-size:20px;left:5%;top:10%;animation-delay:0s;">🛑</div>
+    <div class="float-shape" style="font-size:18px;left:88%;top:30%;animation-delay:3s;">⚠️</div>
+    <div class="float-shape" style="font-size:22px;left:50%;top:65%;animation-delay:6s;">🚸</div>
+    <div class="float-shape" style="font-size:16px;left:22%;top:45%;animation-delay:2s;">🏥</div>
+    <div class="float-shape" style="font-size:20px;left:75%;top:75%;animation-delay:5s;">🚦</div>
+    <div class="float-shape" style="font-size:18px;left:40%;top:20%;animation-delay:1s;">🚒</div>
 
     <div class="container">
         <!-- Header -->
         <div class="header">
             <h1>
-                <span class="emoji-float">🌈</span>
-                Our Environment & Earth Science
-                <span class="emoji-float">🌍</span>
+                <span class="emoji-float">🚦</span>
+                Signs Around Us
+                <span class="emoji-float">🛑</span>
             </h1>
-            <p class="subtitle">Class 4 Worksheet #3 • 15 Fresh Questions!</p>
+            <p class="subtitle">Class 1 Science Worksheet • Chapter 1: Signs We See Every Day!</p>
         </div>
 
         <!-- Progress Bar -->
@@ -554,7 +555,7 @@
 
         <!-- Questions -->
         <div id="questionsContainer">
-            <!-- Q1: Water Cycle -->
+            <!-- Q1: Stop Sign -->
             <div class="question-card" data-q="1">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -562,27 +563,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">1</span>
-                    <span class="question-text">What happens to water vapor when it cools down in the sky?</span>
+                    <span class="question-text">What does a red octagon sign with "STOP" written on it mean?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/www.timeforkids.com/b3b4ed6651db2022ad916ed39de73a2a9c9cc50d.jpg" alt="Water Cycle" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/playworksheet.com/87c71bb0da45fb542b633a9da396a85087f21d56.jpg" alt="Stop Sign" class="question-image">
                 <div class="options">
-                    <div class="option" data-value="A" onclick="selectOption(1, 'A', 'B')">
-                        <span class="option-letter">A</span> It evaporates
+                    <div class="option" data-value="A" onclick="selectOption(1, 'A', 'A')">
+                        <span class="option-letter">A</span> Stop
                     </div>
-                    <div class="option" data-value="B" onclick="selectOption(1, 'B', 'B')">
-                        <span class="option-letter">B</span> It condenses into clouds
+                    <div class="option" data-value="B" onclick="selectOption(1, 'B', 'A')">
+                        <span class="option-letter">B</span> Go fast
                     </div>
-                    <div class="option" data-value="C" onclick="selectOption(1, 'C', 'B')">
-                        <span class="option-letter">C</span> It freezes into ice
+                    <div class="option" data-value="C" onclick="selectOption(1, 'C', 'A')">
+                        <span class="option-letter">C</span> Turn left
                     </div>
-                    <div class="option" data-value="D" onclick="selectOption(1, 'D', 'B')">
-                        <span class="option-letter">D</span> It disappears
+                    <div class="option" data-value="D" onclick="selectOption(1, 'D', 'A')">
+                        <span class="option-letter">D</span> Park here
                     </div>
                 </div>
                 <div class="feedback" id="feedback1"></div>
             </div>
 
-            <!-- Q2: Greenhouse Effect -->
+            <!-- Q2: Traffic Light -->
             <div class="question-card" data-q="2">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -590,27 +591,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">2</span>
-                    <span class="question-text">Which gas is mainly responsible for the greenhouse effect?</span>
+                    <span class="question-text">What does a red traffic light mean?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/eiacp.tropmet.res.in/87328eb0d9eefdbc886f140b08b0befb7ebc3cdc.jpg" alt="Greenhouse Effect" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/englishan.com/ecbae0bc072ca33330c3617fac39dbaabf3dc663.webp" alt="Traffic Light" class="question-image">
                 <div class="options">
-                    <div class="option" data-value="A" onclick="selectOption(2, 'A', 'C')">
-                        <span class="option-letter">A</span> Oxygen
+                    <div class="option" data-value="A" onclick="selectOption(2, 'A', 'B')">
+                        <span class="option-letter">A</span> Go
                     </div>
-                    <div class="option" data-value="B" onclick="selectOption(2, 'B', 'C')">
-                        <span class="option-letter">B</span> Nitrogen
+                    <div class="option" data-value="B" onclick="selectOption(2, 'B', 'B')">
+                        <span class="option-letter">B</span> Stop
                     </div>
-                    <div class="option" data-value="C" onclick="selectOption(2, 'C', 'C')">
-                        <span class="option-letter">C</span> Carbon Dioxide
+                    <div class="option" data-value="C" onclick="selectOption(2, 'C', 'B')">
+                        <span class="option-letter">C</span> Walk fast
                     </div>
-                    <div class="option" data-value="D" onclick="selectOption(2, 'D', 'C')">
-                        <span class="option-letter">D</span> Hydrogen
+                    <div class="option" data-value="D" onclick="selectOption(2, 'D', 'B')">
+                        <span class="option-letter">D</span> Run
                     </div>
                 </div>
                 <div class="feedback" id="feedback2"></div>
             </div>
 
-            <!-- Q3: Solar House -->
+            <!-- Q3: Zebra Crossing -->
             <div class="question-card" data-q="3">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -618,27 +619,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">3</span>
-                    <span class="question-text">Where are solar panels usually placed on a house?</span>
+                    <span class="question-text">Where should we cross the road safely?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/leftbraincraftbrain.com/f809c23c133bda0a1681a20c8c857e9b51c4f5cf.jpg" alt="Solar House" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/t4.ftcdn.net/1b82aa84ad1d946b6ac129be32894efb84194271.jpg" alt="Zebra Crossing" class="question-image">
                 <div class="options">
                     <div class="option" data-value="A" onclick="selectOption(3, 'A', 'B')">
-                        <span class="option-letter">A</span> On the floor
+                        <span class="option-letter">A</span> Anywhere we want
                     </div>
                     <div class="option" data-value="B" onclick="selectOption(3, 'B', 'B')">
-                        <span class="option-letter">B</span> On the roof
+                        <span class="option-letter">B</span> At the zebra crossing
                     </div>
                     <div class="option" data-value="C" onclick="selectOption(3, 'C', 'B')">
-                        <span class="option-letter">C</span> In the basement
+                        <span class="option-letter">C</span> In the middle of the road
                     </div>
                     <div class="option" data-value="D" onclick="selectOption(3, 'D', 'B')">
-                        <span class="option-letter">D</span> Under the bed
+                        <span class="option-letter">D</span> Near a parked car
                     </div>
                 </div>
                 <div class="feedback" id="feedback3"></div>
             </div>
 
-            <!-- Q4: Ocean Pollution -->
+            <!-- Q4: Stop Look Listen -->
             <div class="question-card" data-q="4">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -646,27 +647,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">4</span>
-                    <span class="question-text">Which sea animal is often harmed by plastic bags in the ocean?</span>
+                    <span class="question-text">Before crossing the road, what should we do first?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/www.sciencejournalforkids.org/fbb83aed0cf3bcb366c6914bb2a7f62bc8b6dc33.png" alt="Ocean Pollution" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/images.twinkl.co.uk/b0e1909547561a87106534fba6f562f775a3fd79.jpg" alt="Stop Look Listen" class="question-image">
                 <div class="options">
                     <div class="option" data-value="A" onclick="selectOption(4, 'A', 'A')">
-                        <span class="option-letter">A</span> Sea Turtles
+                        <span class="option-letter">A</span> Stop, Look, and Listen
                     </div>
                     <div class="option" data-value="B" onclick="selectOption(4, 'B', 'A')">
-                        <span class="option-letter">B</span> Lions
+                        <span class="option-letter">B</span> Run quickly
                     </div>
                     <div class="option" data-value="C" onclick="selectOption(4, 'C', 'A')">
-                        <span class="option-letter">C</span> Eagles
+                        <span class="option-letter">C</span> Close our eyes
                     </div>
                     <div class="option" data-value="D" onclick="selectOption(4, 'D', 'A')">
-                        <span class="option-letter">D</span> Bears
+                        <span class="option-letter">D</span> Play on the road
                     </div>
                 </div>
                 <div class="feedback" id="feedback4"></div>
             </div>
 
-            <!-- Q5: Rainforest Layers -->
+            <!-- Q5: School Zone -->
             <div class="question-card" data-q="5">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -674,27 +675,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">5</span>
-                    <span class="question-text">What is the top layer of the rainforest called?</span>
+                    <span class="question-text">What does a yellow sign with children walking mean?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/i.shgcdn.com/09bfca511f2d7eae75d282da3505db6943bf7339" alt="Rainforest Layers" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/englishan.com/ecbae0bc072ca33330c3617fac39dbaabf3dc663.webp" alt="School Zone" class="question-image">
                 <div class="options">
-                    <div class="option" data-value="A" onclick="selectOption(5, 'A', 'A')">
-                        <span class="option-letter">A</span> Emergent Layer
+                    <div class="option" data-value="A" onclick="selectOption(5, 'A', 'B')">
+                        <span class="option-letter">A</span> Zoo nearby
                     </div>
-                    <div class="option" data-value="B" onclick="selectOption(5, 'B', 'A')">
-                        <span class="option-letter">B</span> Forest Floor
+                    <div class="option" data-value="B" onclick="selectOption(5, 'B', 'B')">
+                        <span class="option-letter">B</span> School zone - drive slowly
                     </div>
-                    <div class="option" data-value="C" onclick="selectOption(5, 'C', 'A')">
-                        <span class="option-letter">C</span> Understory
+                    <div class="option" data-value="C" onclick="selectOption(5, 'C', 'B')">
+                        <span class="option-letter">C</span> Park here
                     </div>
-                    <div class="option" data-value="D" onclick="selectOption(5, 'D', 'A')">
-                        <span class="option-letter">D</span> Basement
+                    <div class="option" data-value="D" onclick="selectOption(5, 'D', 'B')">
+                        <span class="option-letter">D</span> Hospital nearby
                     </div>
                 </div>
                 <div class="feedback" id="feedback5"></div>
             </div>
 
-            <!-- Q6: Wind Turbine -->
+            <!-- Q6: Hospital Sign -->
             <div class="question-card" data-q="6">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -702,27 +703,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">6</span>
-                    <span class="question-text">What part of a wind turbine catches the wind?</span>
+                    <span class="question-text">What does a blue sign with a white "H" mean?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/thumbs.dreamstime.com/098ed1981557cfe6b59dad41bc0c44690644690e.jpg" alt="Wind Turbine" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/images.twinkl.co.uk/df215c2f378b803e3f72410281d311222ab4a783.jpg" alt="Hospital Sign" class="question-image">
                 <div class="options">
                     <div class="option" data-value="A" onclick="selectOption(6, 'A', 'A')">
-                        <span class="option-letter">A</span> Blades
+                        <span class="option-letter">A</span> Hospital
                     </div>
                     <div class="option" data-value="B" onclick="selectOption(6, 'B', 'A')">
-                        <span class="option-letter">B</span> Wheels
+                        <span class="option-letter">B</span> Hotel
                     </div>
                     <div class="option" data-value="C" onclick="selectOption(6, 'C', 'A')">
-                        <span class="option-letter">C</span> Windows
+                        <span class="option-letter">C</span> House
                     </div>
                     <div class="option" data-value="D" onclick="selectOption(6, 'D', 'A')">
-                        <span class="option-letter">D</span> Doors
+                        <span class="option-letter">D</span> Highway
                     </div>
                 </div>
                 <div class="feedback" id="feedback6"></div>
             </div>
 
-            <!-- Q7: Composting -->
+            <!-- Q7: Fire Exit -->
             <div class="question-card" data-q="7">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -730,27 +731,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">7</span>
-                    <span class="question-text">Which of these should NOT go in a compost bin?</span>
+                    <span class="question-text">What does a green sign with "EXIT" written on it show?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/www.kidsdogardening.com/27bb8c14308ff8bd69ebe6a24b9df47f8f8addd4.jpeg" alt="Composting" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/thumbs.dreamstime.com/128dc16e0559b886b4c5db4b9e863752a91e9ddf.jpg" alt="Exit Sign" class="question-image">
                 <div class="options">
-                    <div class="option" data-value="A" onclick="selectOption(7, 'A', 'C')">
-                        <span class="option-letter">A</span> Banana peels
+                    <div class="option" data-value="A" onclick="selectOption(7, 'A', 'A')">
+                        <span class="option-letter">A</span> Way to go out safely
                     </div>
-                    <div class="option" data-value="B" onclick="selectOption(7, 'B', 'C')">
-                        <span class="option-letter">B</span> Dry leaves
+                    <div class="option" data-value="B" onclick="selectOption(7, 'B', 'A')">
+                        <span class="option-letter">B</span> Way to the kitchen
                     </div>
-                    <div class="option" data-value="C" onclick="selectOption(7, 'C', 'C')">
-                        <span class="option-letter">C</span> Plastic wrappers
+                    <div class="option" data-value="C" onclick="selectOption(7, 'C', 'A')">
+                        <span class="option-letter">C</span> Way to the playground
                     </div>
-                    <div class="option" data-value="D" onclick="selectOption(7, 'D', 'C')">
-                        <span class="option-letter">D</span> Eggshells
+                    <div class="option" data-value="D" onclick="selectOption(7, 'D', 'A')">
+                        <span class="option-letter">D</span> Way to the bathroom
                     </div>
                 </div>
                 <div class="feedback" id="feedback7"></div>
             </div>
 
-            <!-- Q8: Photosynthesis -->
+            <!-- Q8: Fire Safety -->
             <div class="question-card" data-q="8">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -758,27 +759,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">8</span>
-                    <span class="question-text">What color is chlorophyll, which helps plants make food?</span>
+                    <span class="question-text">What should you do if you see a "FIRE EXIT" sign during a fire?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/www.science-sparks.com/f4882009582b375531e68bad60f02b6019a669f4.jpg" alt="Photosynthesis" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/images.twinkl.co.uk/ea8d268788446eaae7e41db9069a18251975c355.jpg" alt="Fire Exit" class="question-image">
                 <div class="options">
-                    <div class="option" data-value="A" onclick="selectOption(8, 'A', 'B')">
-                        <span class="option-letter">A</span> Red
+                    <div class="option" data-value="A" onclick="selectOption(8, 'A', 'A')">
+                        <span class="option-letter">A</span> Follow it to go outside
                     </div>
-                    <div class="option" data-value="B" onclick="selectOption(8, 'B', 'B')">
-                        <span class="option-letter">B</span> Green
+                    <div class="option" data-value="B" onclick="selectOption(8, 'B', 'A')">
+                        <span class="option-letter">B</span> Ignore it
                     </div>
-                    <div class="option" data-value="C" onclick="selectOption(8, 'C', 'B')">
-                        <span class="option-letter">C</span> Blue
+                    <div class="option" data-value="C" onclick="selectOption(8, 'C', 'A')">
+                        <span class="option-letter">C</span> Go the other way
                     </div>
-                    <div class="option" data-value="D" onclick="selectOption(8, 'D', 'B')">
-                        <span class="option-letter">D</span> Yellow
+                    <div class="option" data-value="D" onclick="selectOption(8, 'D', 'A')">
+                        <span class="option-letter">D</span> Hide under the bed
                     </div>
                 </div>
                 <div class="feedback" id="feedback8"></div>
             </div>
 
-            <!-- Q9: Rainforest Animals -->
+            <!-- Q9: No Smoking -->
             <div class="question-card" data-q="9">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -786,27 +787,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">9</span>
-                    <span class="question-text">Which rainforest bird has a very large, colorful beak?</span>
+                    <span class="question-text">What does a red circle with a cigarette crossed out mean?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/images.twinkl.co.uk/ec247888003400da07db8ca6f7e3de08c99a4908.png" alt="Toucan" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/www.shutterstock.com/04eb2963b74d44ee45979a4cd2ee506f2e224c39.jpg" alt="No Smoking" class="question-image">
                 <div class="options">
-                    <div class="option" data-value="A" onclick="selectOption(9, 'A', 'A')">
-                        <span class="option-letter">A</span> Toucan
+                    <div class="option" data-value="A" onclick="selectOption(9, 'A', 'B')">
+                        <span class="option-letter">A</span> Smoking area
                     </div>
-                    <div class="option" data-value="B" onclick="selectOption(9, 'B', 'A')">
-                        <span class="option-letter">B</span> Sparrow
+                    <div class="option" data-value="B" onclick="selectOption(9, 'B', 'B')">
+                        <span class="option-letter">B</span> No smoking
                     </div>
-                    <div class="option" data-value="C" onclick="selectOption(9, 'C', 'A')">
-                        <span class="option-letter">C</span> Crow
+                    <div class="option" data-value="C" onclick="selectOption(9, 'C', 'B')">
+                        <span class="option-letter">C</span> Fire station
                     </div>
-                    <div class="option" data-value="D" onclick="selectOption(9, 'D', 'A')">
-                        <span class="option-letter">D</span> Pigeon
+                    <div class="option" data-value="D" onclick="selectOption(9, 'D', 'B')">
+                        <span class="option-letter">D</span> Gas station
                     </div>
                 </div>
                 <div class="feedback" id="feedback9"></div>
             </div>
 
-            <!-- Q10: Renewable Energy -->
+            <!-- Q10: No Littering -->
             <div class="question-card" data-q="10">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -814,27 +815,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">10</span>
-                    <span class="question-text">Which of these is NOT a renewable energy source?</span>
+                    <span class="question-text">What does a sign showing a person throwing trash with a red cross mean?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/images.twinkl.co.uk/c4cfa5017e0adf3c1be3c4529b4184ef0f45704f.jpg" alt="Renewable Energy" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/phabcart.imgix.net/607af20bf350bdf68d6991c49b5cf064727c2576.jpg" alt="No Littering" class="question-image">
                 <div class="options">
                     <div class="option" data-value="A" onclick="selectOption(10, 'A', 'C')">
-                        <span class="option-letter">A</span> Sunlight
+                        <span class="option-letter">A</span> Throw trash here
                     </div>
                     <div class="option" data-value="B" onclick="selectOption(10, 'B', 'C')">
-                        <span class="option-letter">B</span> Wind
+                        <span class="option-letter">B</span> Pick up trash
                     </div>
                     <div class="option" data-value="C" onclick="selectOption(10, 'C', 'C')">
-                        <span class="option-letter">C</span> Coal
+                        <span class="option-letter">C</span> No littering
                     </div>
                     <div class="option" data-value="D" onclick="selectOption(10, 'D', 'C')">
-                        <span class="option-letter">D</span> Water (hydro)
+                        <span class="option-letter">D</span> Trash can here
                     </div>
                 </div>
                 <div class="feedback" id="feedback10"></div>
             </div>
 
-            <!-- Q11: Earth Layers -->
+            <!-- Q11: Children Crossing -->
             <div class="question-card" data-q="11">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -842,27 +843,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">11</span>
-                    <span class="question-text">Which layer of the Earth is the hottest?</span>
+                    <span class="question-text">What does a triangular sign with two children walking mean?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/www.ducksters.com/9b7bd8246e4d9e62961ddabd9ebf12286bc243cd.gif" alt="Earth Layers" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/startsafety.uk/ff5e0b88c653d92c16fe49654cef2a8c8c980317.jpg" alt="Children Crossing" class="question-image">
                 <div class="options">
-                    <div class="option" data-value="A" onclick="selectOption(11, 'A', 'D')">
-                        <span class="option-letter">A</span> Crust
+                    <div class="option" data-value="A" onclick="selectOption(11, 'A', 'A')">
+                        <span class="option-letter">A</span> Children crossing - be careful
                     </div>
-                    <div class="option" data-value="B" onclick="selectOption(11, 'B', 'D')">
-                        <span class="option-letter">B</span> Mantle
+                    <div class="option" data-value="B" onclick="selectOption(11, 'B', 'A')">
+                        <span class="option-letter">B</span> Zoo nearby
                     </div>
-                    <div class="option" data-value="C" onclick="selectOption(11, 'C', 'D')">
-                        <span class="option-letter">C</span> Outer Core
+                    <div class="option" data-value="C" onclick="selectOption(11, 'C', 'A')">
+                        <span class="option-letter">C</span> Playground ahead
                     </div>
-                    <div class="option" data-value="D" onclick="selectOption(11, 'D', 'D')">
-                        <span class="option-letter">D</span> Inner Core
+                    <div class="option" data-value="D" onclick="selectOption(11, 'D', 'A')">
+                        <span class="option-letter">D</span> Shopping mall
                     </div>
                 </div>
                 <div class="feedback" id="feedback11"></div>
             </div>
 
-            <!-- Q12: Ocean Plastic -->
+            <!-- Q12: No Parking -->
             <div class="question-card" data-q="12">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -870,27 +871,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">12</span>
-                    <span class="question-text">How long does plastic take to break down in the ocean?</span>
+                    <span class="question-text">What does a sign with "NO PARKING" mean?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/i.natgeofe.com/5fa3dfb7bdab1c610eecb40c17027a98728e9c0c.jpg" alt="Ocean Plastic" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/phabcart.imgix.net/ddae1f98c76ca190fc1a91db99bc9d341c7976ce.jpg" alt="No Parking" class="question-image">
                 <div class="options">
-                    <div class="option" data-value="A" onclick="selectOption(12, 'A', 'D')">
-                        <span class="option-letter">A</span> A few days
+                    <div class="option" data-value="A" onclick="selectOption(12, 'A', 'B')">
+                        <span class="option-letter">A</span> Park your car here
                     </div>
-                    <div class="option" data-value="B" onclick="selectOption(12, 'B', 'D')">
-                        <span class="option-letter">B</span> A few weeks
+                    <div class="option" data-value="B" onclick="selectOption(12, 'B', 'B')">
+                        <span class="option-letter">B</span> Do not park here
                     </div>
-                    <div class="option" data-value="C" onclick="selectOption(12, 'C', 'D')">
-                        <span class="option-letter">C</span> A few months
+                    <div class="option" data-value="C" onclick="selectOption(12, 'C', 'B')">
+                        <span class="option-letter">C</span> Only buses can park
                     </div>
-                    <div class="option" data-value="D" onclick="selectOption(12, 'D', 'D')">
-                        <span class="option-letter">D</span> Hundreds of years
+                    <div class="option" data-value="D" onclick="selectOption(12, 'D', 'B')">
+                        <span class="option-letter">D</span> Free parking
                     </div>
                 </div>
                 <div class="feedback" id="feedback12"></div>
             </div>
 
-            <!-- Q13: Composting Kids -->
+            <!-- Q13: First Aid -->
             <div class="question-card" data-q="13">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -898,27 +899,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">13</span>
-                    <span class="question-text">What tiny creatures help break down compost?</span>
+                    <span class="question-text">What does a green sign with a white cross mean?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/cdn.creatureandcoagency.com/9a80ead57c2498d434195c780ef879a28778503b.jpg" alt="Composting Kids" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/images.twinkl.co.uk/372d690384387bf7d5e064a30595da5d0e732bfe.jpg" alt="First Aid" class="question-image">
                 <div class="options">
-                    <div class="option" data-value="A" onclick="selectOption(13, 'A', 'B')">
-                        <span class="option-letter">A</span> Butterflies
+                    <div class="option" data-value="A" onclick="selectOption(13, 'A', 'A')">
+                        <span class="option-letter">A</span> First aid / Medical help
                     </div>
-                    <div class="option" data-value="B" onclick="selectOption(13, 'B', 'B')">
-                        <span class="option-letter">B</span> Worms
+                    <div class="option" data-value="B" onclick="selectOption(13, 'B', 'A')">
+                        <span class="option-letter">B</span> Toy shop
                     </div>
-                    <div class="option" data-value="C" onclick="selectOption(13, 'C', 'B')">
-                        <span class="option-letter">C</span> Birds
+                    <div class="option" data-value="C" onclick="selectOption(13, 'C', 'A')">
+                        <span class="option-letter">C</span> Candy shop
                     </div>
-                    <div class="option" data-value="D" onclick="selectOption(13, 'D', 'B')">
-                        <span class="option-letter">D</span> Fish
+                    <div class="option" data-value="D" onclick="selectOption(13, 'D', 'A')">
+                        <span class="option-letter">D</span> Library
                     </div>
                 </div>
                 <div class="feedback" id="feedback13"></div>
             </div>
 
-            <!-- Q14: Solar Energy -->
+            <!-- Q14: Danger Sign -->
             <div class="question-card" data-q="14">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -926,27 +927,27 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">14</span>
-                    <span class="question-text">Why is solar energy called a "clean" energy?</span>
+                    <span class="question-text">What does a yellow triangle with a black exclamation mark (!) mean?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/thumbs.dreamstime.com/697edce9f430573d257ba4222766a0466c3fa977.jpg" alt="Solar Energy" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/images.twinkl.co.uk/2ffa1dfa3cb41e7002b86d178f164b2c7c384c78.jpg" alt="Danger Sign" class="question-image">
                 <div class="options">
-                    <div class="option" data-value="A" onclick="selectOption(14, 'A', 'B')">
-                        <span class="option-letter">A</span> It makes the air dirty
+                    <div class="option" data-value="A" onclick="selectOption(14, 'A', 'A')">
+                        <span class="option-letter">A</span> Danger - be careful
                     </div>
-                    <div class="option" data-value="B" onclick="selectOption(14, 'B', 'B')">
-                        <span class="option-letter">B</span> It does not create pollution
+                    <div class="option" data-value="B" onclick="selectOption(14, 'B', 'A')">
+                        <span class="option-letter">B</span> Safe to play
                     </div>
-                    <div class="option" data-value="C" onclick="selectOption(14, 'C', 'B')">
-                        <span class="option-letter">C</span> It uses coal
+                    <div class="option" data-value="C" onclick="selectOption(14, 'C', 'A')">
+                        <span class="option-letter">C</span> Ice cream shop
                     </div>
-                    <div class="option" data-value="D" onclick="selectOption(14, 'D', 'B')">
-                        <span class="option-letter">D</span> It makes loud noise
+                    <div class="option" data-value="D" onclick="selectOption(14, 'D', 'A')">
+                        <span class="option-letter">D</span> Park here
                     </div>
                 </div>
                 <div class="feedback" id="feedback14"></div>
             </div>
 
-            <!-- Q15: Rainforest Animals -->
+            <!-- Q15: Fire Safety Poster -->
             <div class="question-card" data-q="15">
                 <div class="corner-decoration corner-tl"></div>
                 <div class="corner-decoration corner-tr"></div>
@@ -954,21 +955,21 @@
                 <div class="corner-decoration corner-br"></div>
                 <div class="question-header">
                     <span class="question-number">15</span>
-                    <span class="question-text">Which animal hangs upside down in rainforest trees?</span>
+                    <span class="question-text">If your clothes catch fire, what should you do?</span>
                 </div>
-                <img src="https://kimi-web-img.moonshot.cn/img/www.shutterstock.com/8bf3ed396d4f116e76139b25f1470df81c8d68e8.jpg" alt="Rainforest Animals" class="question-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/monkeypen.com/f2b66e3850d3673e4db85f87b385085ed2f05aee.jpg" alt="Fire Safety" class="question-image">
                 <div class="options">
-                    <div class="option" data-value="A" onclick="selectOption(15, 'A', 'A')">
-                        <span class="option-letter">A</span> Sloth
+                    <div class="option" data-value="A" onclick="selectOption(15, 'A', 'B')">
+                        <span class="option-letter">A</span> Run around
                     </div>
-                    <div class="option" data-value="B" onclick="selectOption(15, 'B', 'A')">
-                        <span class="option-letter">B</span> Cheetah
+                    <div class="option" data-value="B" onclick="selectOption(15, 'B', 'B')">
+                        <span class="option-letter">B</span> Stop, Drop, and Roll
                     </div>
-                    <div class="option" data-value="C" onclick="selectOption(15, 'C', 'A')">
-                        <span class="option-letter">C</span> Elephant
+                    <div class="option" data-value="C" onclick="selectOption(15, 'C', 'B')">
+                        <span class="option-letter">C</span> Jump up and down
                     </div>
-                    <div class="option" data-value="D" onclick="selectOption(15, 'D', 'A')">
-                        <span class="option-letter">D</span> Shark
+                    <div class="option" data-value="D" onclick="selectOption(15, 'D', 'B')">
+                        <span class="option-letter">D</span> Hide in a corner
                     </div>
                 </div>
                 <div class="feedback" id="feedback15"></div>
@@ -994,14 +995,14 @@
         // Track answers
         const answers = {};
         const correctAnswers = {
-            1: 'B', 2: 'C', 3: 'B', 4: 'A', 5: 'A',
-            6: 'A', 7: 'C', 8: 'B', 9: 'A', 10: 'C',
-            11: 'D', 12: 'D', 13: 'B', 14: 'B', 15: 'A'
+            1: 'A', 2: 'B', 3: 'B', 4: 'A', 5: 'B',
+            6: 'A', 7: 'A', 8: 'A', 9: 'B', 10: 'C',
+            11: 'A', 12: 'B', 13: 'A', 14: 'A', 15: 'B'
         };
         const correctTexts = {
-            1: 'It condenses into clouds', 2: 'Carbon Dioxide', 3: 'On the roof', 4: 'Sea Turtles', 5: 'Emergent Layer',
-            6: 'Blades', 7: 'Plastic wrappers', 8: 'Green', 9: 'Toucan', 10: 'Coal',
-            11: 'Inner Core', 12: 'Hundreds of years', 13: 'Worms', 14: 'It does not create pollution', 15: 'Sloth'
+            1: 'Stop', 2: 'Stop', 3: 'At the zebra crossing', 4: 'Stop, Look, and Listen', 5: 'School zone - drive slowly',
+            6: 'Hospital', 7: 'Way to go out safely', 8: 'Follow it to go outside', 9: 'No smoking', 10: 'No littering',
+            11: 'Children crossing - be careful', 12: 'Do not park here', 13: 'First aid / Medical help', 14: 'Danger - be careful', 15: 'Stop, Drop, and Roll'
         };
 
         function selectOption(qNum, selected, correct) {
@@ -1090,21 +1091,21 @@
             if (score === 15) {
                 scoreEmoji.textContent = '🏆';
                 scoreStars.textContent = '⭐⭐⭐⭐⭐';
-                scoreMessage.textContent = 'Perfect Score! You are an Earth Science Expert! 🌍✨';
+                scoreMessage.textContent = 'Perfect Score! You are a Signs Expert! 🚦✨';
                 createConfetti();
             } else if (score >= 12) {
                 scoreEmoji.textContent = '🌟';
                 scoreStars.textContent = '⭐⭐⭐⭐';
-                scoreMessage.textContent = 'Excellent work! You know a lot about our environment! 🌱';
+                scoreMessage.textContent = 'Excellent work! You know your signs very well! 🛑';
                 createConfetti();
             } else if (score >= 8) {
                 scoreEmoji.textContent = '😊';
                 scoreStars.textContent = '⭐⭐⭐';
-                scoreMessage.textContent = 'Good job! Keep learning about our Earth! 📚';
+                scoreMessage.textContent = 'Good job! Keep learning about signs! 📚';
             } else if (score >= 5) {
                 scoreEmoji.textContent = '💪';
                 scoreStars.textContent = '⭐⭐';
-                scoreMessage.textContent = 'Not bad! Try again to improve your score! 🎯';
+                scoreMessage.textContent = 'Not bad! Try again to learn more signs! 🎯';
             } else {
                 scoreEmoji.textContent = '📖';
                 scoreStars.textContent = '⭐';
