@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Class 1 Addition Worksheet</title>
+<title>Fun Addition Worksheet</title>
 
 <style>
 
@@ -12,69 +12,63 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:'Comic Sans MS', Arial, sans-serif;
 }
 
 body{
-    background:linear-gradient(135deg,#ffeaa7,#74b9ff);
+    background:linear-gradient(135deg,#ffecd2,#fcb69f);
     min-height:100vh;
     padding:20px;
 }
 
 .container{
-    max-width:900px;
+    max-width:950px;
     margin:auto;
     background:white;
+    border-radius:30px;
     padding:25px;
-    border-radius:25px;
     box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 h1{
     text-align:center;
-    color:#6c5ce7;
+    color:#ff7675;
+    font-size:clamp(32px,5vw,48px);
     margin-bottom:10px;
-    font-size:clamp(30px,5vw,45px);
 }
 
 .subtitle{
     text-align:center;
     color:#555;
-    margin-bottom:25px;
     font-size:20px;
+    margin-bottom:25px;
 }
 
-.score-box{
+.score{
     text-align:center;
-    font-size:28px;
+    font-size:30px;
     font-weight:bold;
-    margin-bottom:30px;
     color:#0984e3;
+    margin-bottom:25px;
 }
 
-.question-card{
-    background:#f5f7ff;
-    border:3px solid #dfe6e9;
-    border-radius:20px;
+.question-box{
+    background:#fff8f0;
+    border:3px dashed #fd79a8;
+    border-radius:22px;
     padding:20px;
     margin-bottom:20px;
-    transition:0.3s;
-}
-
-.question-card:hover{
-    transform:translateY(-3px);
-    box-shadow:0 6px 15px rgba(0,0,0,0.1);
 }
 
 .question{
     text-align:center;
-    font-size:clamp(28px,6vw,42px);
+    font-size:clamp(28px,6vw,44px);
     font-weight:bold;
     color:#2d3436;
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
-.input-area{
+.controls{
     display:flex;
     justify-content:center;
     align-items:center;
@@ -96,7 +90,7 @@ button{
     padding:12px 20px;
     border:none;
     border-radius:12px;
-    background:#00b894;
+    background:#6c5ce7;
     color:white;
     font-size:18px;
     font-weight:bold;
@@ -105,11 +99,11 @@ button{
 }
 
 button:hover{
-    background:#019875;
+    background:#5848c2;
 }
 
-.answer{
-    margin-top:18px;
+.result{
+    margin-top:15px;
     text-align:center;
     font-size:24px;
     font-weight:bold;
@@ -153,20 +147,20 @@ button:hover{
 
 <div class="container">
 
-    <h1>🌟 Fun Addition Worksheet 🌟</h1>
+    <h1>🌈 Super Fun Addition 🌈</h1>
 
     <div class="subtitle">
-        Class 1 Single Digit Maths Addition
+        Solve the Addition Questions
     </div>
 
-    <div class="score-box">
-        Score: <span id="score">0</span> / 10
+    <div class="score">
+        Score: <span id="score">0</span> / 20
     </div>
 
     <div id="worksheet"></div>
 
     <div class="footer">
-        🎉 Great Job Little Math Star! 🎉
+        ⭐ You Are Doing Amazing! ⭐
     </div>
 
 </div>
@@ -175,16 +169,29 @@ button:hover{
 
 const questions = [
 
-    {a:2,b:3},
-    {a:1,b:4},
-    {a:5,b:2},
+    {a:2,b:2},
+    {a:1,b:5},
+    {a:4,b:2},
+    {a:3,b:4},
+    {a:5,b:1},
+
+    {a:6,b:2},
+    {a:2,b:7},
+    {a:8,b:1},
     {a:3,b:6},
     {a:7,b:1},
+
+    {a:4,b:5},
+    {a:5,b:3},
+    {a:1,b:8},
+    {a:2,b:4},
+    {a:6,b:1},
+
+    {a:3,b:5},
+    {a:7,b:2},
     {a:4,b:4},
-    {a:8,b:1},
-    {a:2,b:5},
-    {a:6,b:2},
-    {a:3,b:3}
+    {a:8,b:0},
+    {a:5,b:2}
 
 ];
 
@@ -194,74 +201,69 @@ const worksheet = document.getElementById("worksheet");
 
 questions.forEach((q,index)=>{
 
-    const correctAnswer = q.a + q.b;
+    const answer = q.a + q.b;
 
-    const card = document.createElement("div");
+    const box = document.createElement("div");
 
-    card.className = "question-card";
+    box.className = "question-box";
 
-    card.innerHTML = `
+    box.innerHTML = `
 
         <div class="question">
             ${index+1}. ${q.a} + ${q.b} = ?
         </div>
 
-        <div class="input-area">
+        <div class="controls">
 
-            <input 
-                type="number" 
-                id="input-${index}" 
-                min="0"
-            >
+            <input type="number" id="input-${index}" min="0">
 
-            <button onclick="checkAnswer(${index},${correctAnswer})">
-                Check Answer
+            <button onclick="checkAnswer(${index},${answer})">
+                Check
             </button>
 
         </div>
 
-        <div class="answer" id="answer-${index}"></div>
+        <div class="result" id="result-${index}"></div>
 
     `;
 
-    worksheet.appendChild(card);
+    worksheet.appendChild(box);
 
 });
 
-function checkAnswer(index, correctAnswer){
+function checkAnswer(index,answer){
 
-    const inputBox = document.getElementById(`input-${index}`);
+    const input = document.getElementById(`input-${index}`);
 
-    const answerBox = document.getElementById(`answer-${index}`);
+    const result = document.getElementById(`result-${index}`);
 
-    const userAnswer = Number(inputBox.value);
+    const userAnswer = Number(input.value);
 
-    if(answerBox.dataset.checked === "true"){
+    if(result.dataset.done === "true"){
         return;
     }
 
-    answerBox.style.display = "block";
+    result.style.display = "block";
 
-    if(userAnswer === correctAnswer){
+    if(userAnswer === answer){
 
-        answerBox.innerHTML = `✅ Right! Answer is ${correctAnswer}`;
+        result.innerHTML = `✅ Right! Answer is ${answer}`;
 
-        answerBox.className = "answer correct";
+        result.className = "result correct";
 
         score++;
 
         document.getElementById("score").innerText = score;
 
+    }else{
+
+        result.innerHTML = `❌ Wrong! Correct Answer is ${answer}`;
+
+        result.className = "result wrong";
+
     }
-    else{
 
-        answerBox.innerHTML = `❌ Wrong! Correct Answer is ${correctAnswer}`;
-
-        answerBox.className = "answer wrong";
-
-    }
-
-    answerBox.dataset.checked = "true";
+    result.dataset.done = "true";
 
 }
 
